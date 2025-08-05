@@ -1,0 +1,148 @@
+body {
+    /* background-color: #1a1a2e;
+    background-color: #16213e; */
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 3rem;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    position: relative; 
+    z-index: 10;      
+}
+
+.logo {
+    margin: auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo .highlight {
+    color: #00a383;
+}
+
+.menu ul {
+    gap: 30px;
+    display: flex;
+    margin: auto;
+    list-style-type: none;
+}
+
+.menu li {
+    font-size: 1.2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    transition: color 1s ease;
+}
+
+.menu a:hover {
+    color: #00a383;
+}
+
+.menu a:active {
+    color: #76f3da;
+}
+
+.menu hr {
+    margin: auto;
+    height: 109%;
+    width: 1px;
+    background-color: black;
+    border: none;
+}
+
+.menu .signup {
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu .signup:hover {
+    transform: scale(1.1);
+    background-color: #00a383;
+    color: white;
+}
+
+.main {
+    display: flex;
+    background-color: #00a383;
+}
+
+.slogen{
+    margin-top: 5%;
+    width: 50%;
+}
+
+.slogen .sl1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+}
+
+.slogen .sl2 {
+    font-weight:normal;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.slogen button{
+    display: flex;
+    margin: auto;
+    margin-bottom: 10%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #067c64;
+    color: white;
+}
+
+.slogen button:hover{
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+    transform:translateY(-2px);
+    transition: transform .4s ease , background-color 1s ease;
+}
+
+.slogen a{
+    text-decoration: none;
+}
+
+.image-group {
+    position: relative;
+    width: 50%;
+}
+
+.image-group .phone1 {
+    position: absolute;
+    top: 54%;
+    width: 20%;
+    transform: rotateZ(-8deg);
+    z-index: 1;
+}
+
+.image-group .phone2 {
+    position: absolute;
+    left: 60%;
+    width: 20%;
+    transform: rotateZ(8deg);
+    top: 59%;
+}
+
+.image-group .laptop {
+    
+    position: absolute;
+
+    width: 70%;
+    top: 60%;
+}
