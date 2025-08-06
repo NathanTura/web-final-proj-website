@@ -131,7 +131,14 @@ body {
     z-index: 1;
 }
 
+.phone1:hover{
+    transform: scale(1.3) rotateZ(0deg);
+    transition: transform .5s ease ;
+    cursor:pointer;
+}
+
 .image-group .phone2 {
+
     position: absolute;
     left: 60%;
     width: 20%;
@@ -139,8 +146,23 @@ body {
     top: 59%;
 }
 
+.phone2:hover{
+    transform: scale(1.3);
+    z-index: 2;
+    transition: transform .5s ease ;
+    cursor:pointer;
+}
+
 .image-group .laptop {
     position: absolute;
     width: 70%;
     top: 60%;
+}
+
+.laptop:hover
+{
+    transform: scale(1.4);
+    z-index: 2;
+    transition: transform .5s ease ;
+    cursor:pointer;
 }
