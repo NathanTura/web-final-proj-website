@@ -79,8 +79,6 @@ body {
 }
 
 
-
-/* Section 1 */
 .sec1 {
     padding: 4% 10%;
     background-color: #f7f7f7;
@@ -88,25 +86,17 @@ body {
 }
 
 .head-group h3 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     color: #555;
     margin-bottom: 0.5rem;
 }
 
 .head-group h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #00a383;
     margin-bottom: 1rem;
 }
 
-.subtext {
-    color: #333;
-    max-width: 600px;
-    margin: auto;
-    font-size: 1rem;
-}
-
-/* Section 2 */
 .sec2 {
     margin: 4% auto;
     max-width: 800px;
@@ -137,7 +127,7 @@ body {
 }
 
 .button-group button {
-    padding: 10px 24px;
+    padding: 10px 39px;
     font-size: 1rem;
     background-color: #00a383;
     color: white;
@@ -148,10 +138,10 @@ body {
 }
 
 .button-group button:hover {
+    transform: translateY(2px);
     background-color: #009e75;
 }
 
-/* Section 3 */
 .sec3 {
     background-color: #eaeaea;
     padding: 3rem 10%;
@@ -159,7 +149,7 @@ body {
 }
 
 .support-info h3 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     color: #00a383;
 }
