@@ -2,6 +2,7 @@ body {
     /* background-color: #1a1a2e;
     background-color: #16213e; */
     display: block;
+
 }
 
 .menu {
@@ -9,8 +10,12 @@ body {
     justify-content: space-between;
     padding: 1.2rem 3rem;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
-    position: relative; 
-    z-index: 10;      
+    position: fixed;     
+    top: 0;            
+    left: 0;
+    width: 100%;       
+    background-color: white; 
+    z-index: 10;
 }
 
 .logo {
@@ -84,7 +89,7 @@ body {
 }
 
 .slogan .sl1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: lighter;
     color: white;
     text-align: center;
@@ -92,11 +97,12 @@ body {
 
 .slogan .sl2 {
     font-weight:normal;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
     text-align: center;
     margin-bottom: 2rem;
 }
+
 .slogan button{
     display: flex;
     margin: auto;
@@ -163,7 +169,7 @@ body {
 
 .laptop:hover 
 {
-    transform: translateY(-2em);
+    transform: translateY(-2em) scale(1.1);
     cursor:pointer;
 }
 
@@ -236,6 +242,10 @@ body:has(.laptop:hover) .phone2 {
 
 .discription section{
     height: 10rem;
+}
+
+section p {
+    padding: 4%;
 }
 
 
