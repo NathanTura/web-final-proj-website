@@ -229,3 +229,38 @@ section p {
     padding: 0.5rem;
     color: #333;
 }
+
+.setup-guide{
+    border-radius: 10px;
+}
+
+body:has(.setup-guide:hover) .setup-guide h2{
+    box-shadow: 0px 3px;
+}
+
+.setup-guide h2{
+    margin-top: -5%;
+    padding: 10px;
+    text-align: center;
+    color: #00a383;
+    font-size: 1.8rem;
+    transition:  box-shadow .6s ease;
+}
+
+
+
+.setup-guide em {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.stepup{
+    display: flex;
+    justify-content: center;
+}
+.stepup h4{
+     color: #00a383;
+}
+
+.setup-guide img{
+    width: 22%;
+}
