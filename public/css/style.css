@@ -244,7 +244,7 @@ body:has(.setup-guide:hover) .setup-guide h2{
     text-align: center;
     color: #00a383;
     font-size: 1.8rem;
-    transition:  box-shadow .6s ease;
+    transition:  box-shadow 1s ease;
 }
 
 
