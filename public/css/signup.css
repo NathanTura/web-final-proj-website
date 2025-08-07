@@ -107,26 +107,29 @@ body{
 
 .separeter-group{
     display: flex;
+    position: relative;
+    gap: 2%;
+    justify-content: space-between;
     align-items: center;
     font-weight: bolder;
 }
 
 .separeter-group hr{
-    width: 180px;
+    width: 170px;
     border: 1px black solid;
     opacity: .6;
 }
 
 .link-group {
+    display:grid;
+    gap: 10px;
     width: 90%;
-    display: flex;
     margin: auto;
-    gap: 4px;
 }
 
 .link-group button{
-    padding: 5px;
-    border-radius: 10px;
+    padding: 10px;
+    border-radius: 5px;
     text-align: center;
     transition: transform .5s ease;
     font-weight: bold;
@@ -147,6 +150,24 @@ body{
     border: none;
 }
 
-.link-group button:hover{
-    transform: translateY(-10%);
+body:has(.google:hover) .facebook{
+     transform: translateY(10%) scale(.9);
+}
+body:has(.google:hover) .apple{
+     transform: translateY(10%) scale(.8);
+}
+
+body:has(.facebook:hover) .google{
+     transform: translateY(-10%) scale(.9);
+}
+
+body:has(.facebook:hover) .apple{
+     transform: translateY(10%) scale(.9);
+}
+
+body:has(.apple:hover) .facebook{
+    transform: translateY(-10%)  scale(.9);
+}
+body:has(.apple:hover) .google{
+    transform: translateY(-10%)  scale(.8);
 }
