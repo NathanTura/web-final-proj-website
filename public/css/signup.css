@@ -4,6 +4,10 @@ body{
     justify-self: center;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 .nav-container{
     padding: 20px 10px;
     width: 100%;
@@ -140,7 +144,6 @@ body{
     background-color: lightcoral;
 }
 
-
 .link-group .facebook{
     border: none;
     background-color: lightblue;
@@ -149,6 +152,7 @@ body{
 .link-group .apple{
     border: none;
 }
+
 
 body:has(.google:hover) .facebook{
      transform: translateY(10%) scale(.9);
