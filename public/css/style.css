@@ -230,17 +230,13 @@ section p {
     color: #333;
 }
 
-.setup-guide {
-    border-radius: 10px;
-}
-
 body:has(.setup-guide:hover) .setup-guide h2 {
     box-shadow: 0px 3px;
 }
 
 .setup-guide h2 {
     margin-top: -5%;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     color: #00a383;
     font-size: 1.8rem;
@@ -252,15 +248,79 @@ body:has(.setup-guide:hover) .setup-guide h2 {
     font-weight: bold;
 }
 
-.stepup {
+.setup-guide h4 {
+    color: rgb(0, 163, 131);
+}
+
+.Create-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 5%;
 }
 
-.stepup h4 {
-    color: #00a383;
+.Automate-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
 }
 
-.setup-guide img {
-    width: 22%;
+.Manage-Container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.info {
+    padding: 20px;
+}
+
+.video-container {
+    width: 20%;
+    position: relative;
+}
+
+img , video{
+    position: absolute;
+    width: 100%;
+    transition: transform .3s ease , opacity .5s ease;
+}
+
+img{
+    opacity: 1;
+}
+
+video{
+    opacity: 0;
+}
+
+body:has(.Create-container:hover) .create-video{
+    transform: translateX(-10%);
+    opacity: 1;
+    z-index: 2;
+}
+
+body:has(.Create-container:hover) .create-image{
+    opacity: 0;
+}
+
+
+body:has(.Automate-container:hover) .install-video{
+    transform: translateY(-5%);
+    opacity: 1;
+    z-index: 2;
+}
+
+body:has(.Automate-container:hover) .install-image{
+    opacity: 0;
+}
+
+
+body:has(.Manage-Container:hover) .finances-video{
+    transform: translateY(-5%);
+    opacity: 1;
+    z-index: 2;
+}
+
+body:has(.Manage-Container:hover) .finances-image{
+    opacity: 0;
 }
