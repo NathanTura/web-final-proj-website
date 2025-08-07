@@ -40,7 +40,7 @@ body{
     min-width: 300px;
     padding: 30px 20px;
     margin-top: 20%;
-    opacity: .8;
+  
 
 }
 
@@ -61,6 +61,7 @@ body{
 
 .input-group label{
     font-size: 1.1rem;
+    opacity: .9;
 }
 
 .input-group input[type='email'] ,
@@ -70,8 +71,8 @@ body{
     border: 0.5px solid;
     border-radius: 5px;
     padding: 5px 5px;
-    font-size: 1.1rem;
-    transition: border-color .3s ease , box-shadow .3s ease;
+    font-size: 1rem;
+    transition: border-color .5s ease , box-shadow .4s ease;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -81,4 +82,25 @@ body{
     border-color: #00a383;
     outline: none;
     box-shadow: 0px 5px 1px #00a383;
+}
+
+
+.button-group{
+
+    margin-top: 1%;
+}
+
+.button-group input {
+    width: 100%;
+    border: 1px solid;
+    padding: 15px;
+    background-color: #00a383;
+    color: white;
+    border-radius: 5px;
+    transition: transform .4s ease;
+}
+
+.button-group input:hover {
+    transform: translateY(-10%);
+    cursor: pointer;
 }
