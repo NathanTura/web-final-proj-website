@@ -18,6 +18,10 @@ body {
     z-index: 10;
 }
 
+.menu-slider{
+    display: none;
+}
+
 .logo {
     margin: auto;
     font-size: 1.5rem;
@@ -279,48 +283,207 @@ body:has(.setup-guide:hover) .setup-guide h2 {
     position: relative;
 }
 
-img , video{
+img,
+video {
     position: absolute;
     width: 100%;
-    transition: transform .3s ease , opacity .5s ease;
+    transition: transform .3s ease, opacity .5s ease;
 }
 
-img{
+img {
     opacity: 1;
 }
 
-video{
+video {
     opacity: 0;
 }
 
-body:has(.Create-container:hover) .create-video{
+body:has(.Create-container:hover) .create-video {
     transform: translateX(-10%);
     opacity: 1;
     z-index: 2;
 }
 
-body:has(.Create-container:hover) .create-image{
+body:has(.Create-container:hover) .create-image {
     opacity: 0;
 }
 
 
-body:has(.Automate-container:hover) .install-video{
+body:has(.Automate-container:hover) .install-video {
     transform: translateY(-5%);
     opacity: 1;
     z-index: 2;
 }
 
-body:has(.Automate-container:hover) .install-image{
+body:has(.Automate-container:hover) .install-image {
     opacity: 0;
 }
 
 
-body:has(.Manage-Container:hover) .finances-video{
+body:has(.Manage-Container:hover) .finances-video {
     transform: translateY(-5%);
     opacity: 1;
     z-index: 2;
 }
 
-body:has(.Manage-Container:hover) .finances-image{
+body:has(.Manage-Container:hover) .finances-image {
     opacity: 0;
+}
+
+@media(max-width:769px) {
+    .main {
+        display: grid;
+        grid-template-areas:
+            "image"
+            "slogan";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+        align-items: center;
+        padding: 2rem 1rem;
+        gap: 2rem;
+        background-color: #00a383;
+    }
+
+    .slogan {
+        grid-area: slogan;
+        width: 100%;
+        text-align: center;
+    }
+
+    .slogan .sl1 {
+        font-size: 1.3rem;
+    }
+
+    .slogan .sl2 {
+        font-size: 1.1rem;
+    }
+
+    .slogan button {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+
+    .image-group {
+        grid-area: image;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 1rem;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .image-group img {
+        position: relative !important;
+        top: 51px !important;
+        left: auto !important;
+        transform: none !important;
+    }
+
+    .laptop {
+        width: 55%;
+        z-index: 2;
+        transform: none !important;
+    }
+
+    .phone1,
+    .phone2 {
+        width: 20%;
+        max-width: 120px;
+        z-index: 1;
+    }
+
+    .phone1 {
+        transform: rotate(-15deg);
+    }
+
+    .phone2 {
+        transform: rotate(15deg);
+    }
+
+    .discription {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .discription section {
+        max-width: 50%;
+    }
+
+    section p {
+        font-size: 1.0rem;
+    }
+
+    .setup-guide {
+        display: grid;
+        grid-template-areas: 'info' 'create' 'autoM' 'manage';
+    }
+
+    .setup-guide h2 {
+        font-size: 1.4rem;
+        grid-area: info;
+    }
+
+    .Create-container {
+        display: flex;
+        flex-direction: column;
+        grid-area: create;
+    }
+
+    .Automate-container {
+        grid-area: autoM;
+    }
+
+    .Manage-Container {
+        grid-area: manage;
+    }
+
+    .setup-guide img,
+    video {
+        display: none;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu-slider{
+        display: flex;
+        align-items: center;
+        position: absolute;  
+        top: 50%;
+    }
+
+    .menu-slider button{
+        width: 2.1rem;
+        border: none;
+        display: inline-flex; 
+        justify-content: center;
+        align-items: center; 
+   
+    }
+
+    .menu-slider img{
+        background-color: #00a383;
+        border-radius: 10%;
+        padding: 10%;
+        width: 100%;
+        transition: background-color .5s ease , transform .5s ease;
+    }
+
+
+    .menu-slider img:hover{
+        background-color: #027760;
+        transform: translateY(1px);
+        cursor: pointer;
+    }
+
+     .menu-slider img:active{
+        background-color: cyan;
+    }
+
 }
