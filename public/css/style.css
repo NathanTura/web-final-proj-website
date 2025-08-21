@@ -7,11 +7,11 @@ body {
 
 .menu {
     display: flex;
-  
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
- 
-    padding: 1.2rem 3rem;
+    gap: 7%;
+    flex-wrap: wrap;  
+    padding: .5rem 0rem;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
@@ -44,7 +44,6 @@ body {
     gap: 30px;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
     list-style-type: none;
 }
 
@@ -472,7 +471,9 @@ body:has(.Manage-Container:hover) .finances-image {
         display: flex;
         align-items: center;
         position: absolute;  
-        top: 50%;
+        top: 3%;
+        left: 4%;
+        z-index: 1000;
     }
 
     .menu-slider button{
@@ -488,7 +489,7 @@ body:has(.Manage-Container:hover) .finances-image {
         background-color: #00a383;
         border-radius: 10%;
         padding: 10%;
-        width: 100%;
+        width: 50%;
         transition: background-color .5s ease , transform .5s ease;
     }
 
