@@ -489,7 +489,7 @@ body:has(.Manage-Container:hover) .finances-image {
         background-color: #00a383;
         border-radius: 10%;
         padding: 10%;
-        width: 50%;
+        width: 80%;
         transition: background-color .5s ease , transform .5s ease;
     }
 
