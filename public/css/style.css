@@ -462,7 +462,6 @@ body:has(.Manage-Container:hover) .finances-image {
 
     .menu ul {
         display: none;
-
         flex-wrap: wrap;
         transition: opacity 1s ease;
     }
