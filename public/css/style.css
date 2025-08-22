@@ -349,7 +349,7 @@ body:has(.Manage-Container:hover) .finances-image {
     }
 
     .menu{
-        padding: 1rem 0rem;
+        padding: .8rem 0rem;
     }
 
     .slogan {
@@ -455,20 +455,18 @@ body:has(.Manage-Container:hover) .finances-image {
     }
     
     .menu{
-        display: flex;
-        
+        display: flex;  
     }
 
     .logo{
         display: flex;
         margin: auto;
     }
-
+    
     .menu ul {
         display: none;
-
         flex-wrap: wrap;
-        transition: opacity 1s ease;
+   
     }
 
     .menu-slider{
