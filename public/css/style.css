@@ -348,8 +348,66 @@ body:has(.Manage-Container:hover) .finances-image {
         background-color: #00a383;
     }
 
+
     .menu{
         padding: .8rem 0rem;
+        display: flex;  
+    }
+
+    .logo{
+        display: flex;
+        margin: auto;
+    }
+    
+    .menu ul {
+        display: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .menu ul hr{
+        display: none;
+    }
+
+
+    .menu-slider{
+        display: flex;
+        align-items: center;
+        position: fixed;  
+        top: 25px;
+        left: 4%;
+        z-index: 1000;
+    }
+
+    .menu-slider button{
+        width: 2.1rem;
+        border: none;
+        display: inline-flex; 
+        justify-content: center;
+        align-items: center; 
+   
+    }
+
+    .menu-slider img{
+        background-color: #00a383;
+        border-radius: 10%;
+        padding: 10%;
+        width: 80%;
+        transition: background-color .5s ease , transform .5s ease;
+    }
+
+
+    .menu-slider img:hover{
+        background-color: #027760;
+        transform: translateY(1px);
+        cursor: pointer;
+    }
+
+   
+     .menu-slider img:active{
+        background-color: cyan;
     }
 
     .slogan {
@@ -454,62 +512,6 @@ body:has(.Manage-Container:hover) .finances-image {
         display: none;
     }
     
-    .menu{
-        display: flex;  
-    }
-
-    .logo{
-        display: flex;
-        margin: auto;
-    }
-    
-    .menu ul {
-        display: none;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
-        margin-top: 20px;
-    }
-
-    .menu ul hr{
-        display: none;
-    }
-
-    .menu-slider{
-        display: flex;
-        align-items: center;
-        position: fixed;  
-        top: 25px;
-        left: 4%;
-        z-index: 1000;
-    }
-
-    .menu-slider button{
-        width: 2.1rem;
-        border: none;
-        display: inline-flex; 
-        justify-content: center;
-        align-items: center; 
-   
-    }
-
-    .menu-slider img{
-        background-color: #00a383;
-        border-radius: 10%;
-        padding: 10%;
-        width: 80%;
-        transition: background-color .5s ease , transform .5s ease;
-    }
-
-
-    .menu-slider img:hover{
-        background-color: #027760;
-        transform: translateY(1px);
-        cursor: pointer;
-    }
-
-     .menu-slider img:active{
-        background-color: cyan;
-    }
+  
 
 }
