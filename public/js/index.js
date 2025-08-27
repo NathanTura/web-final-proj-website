@@ -30,3 +30,5 @@ function showmenu(){
         isshowing = !isshowing
     }
 }
+
+var theme = 'light'
