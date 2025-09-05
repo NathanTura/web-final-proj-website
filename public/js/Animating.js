@@ -60,17 +60,17 @@ function showmenu() {
     }
 }
 
-const slogan = document.getElementById('slogan');
-slogan.style.transform = 'translateY(0px)';
-slogan.style.opacity = '1';
 
-const myInterval = setInterval(loadimages, 400);
+const myInterval = setInterval(loadimages, 300);
 let count = 0;
 
 const images = document.querySelectorAll('.image-group > img');
 
 function loadimages() {
     if (count === 0) {
+        const slogan = document.getElementById('slogan');
+        slogan.style.transform = 'translateY(0px)';
+        slogan.style.opacity = '1';
         images[2].style.opacity = '1'; // laptop
         images[2].style.top = '60%';
     } 
