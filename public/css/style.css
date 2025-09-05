@@ -131,26 +131,32 @@ body[data-theme="dark"] {
 .main {
     display: flex;
     background-color: var(--accent-color);
+    transition: all .5s ease;
 }
 
 .slogan {
     margin-top: 5%;
     width: 50%;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all .3s ease;
 }
 
 .slogan .sl1 {
     font-size: 2rem;
     font-weight: lighter;
-    color: var(--bg-color);
+    color: white;
     text-align: center;
+    transition: color .5s ease;
 }
 
 .slogan .sl2 {
     font-weight: normal;
     font-size: 1.5rem;
-    color: var(--bg-color);
+    color: white;
     text-align: center;
     margin-bottom: 2rem;
+        transition: color .5s ease;
 }
 
 .slogan button {
@@ -161,7 +167,8 @@ body[data-theme="dark"] {
     border-radius: 10px;
     border: none;
     background-color: #067c64;
-    color: var(--bg-color);
+    color: white;
+    transition: color .5s ease;
 }
 
 .slogan button:hover {
@@ -187,8 +194,10 @@ body[data-theme="dark"] {
     top: 54%;
     width: 15%;
     transform: rotateZ(-8deg);
+    left: -100%;
+    opacity: 0;
     z-index: 1;
-    transition: transform .5s ease;
+    transition: all .3s ease;
 }
 
 .phone1:hover {
@@ -198,11 +207,12 @@ body[data-theme="dark"] {
 
 .image-group .phone2 {
     position: absolute;
-    left: 50%;
+    opacity: 0;
+    left: 100%;
     width: 15%;
     transform: rotateZ(8deg);
     top: 59%;
-    transition: transform .5s ease;
+    transition: all .3s ease;
 }
 
 .phone2:hover {
@@ -213,9 +223,10 @@ body[data-theme="dark"] {
 
 .image-group .laptop {
     position: absolute;
+    top: 59vh;
+    opacity: 0;
     width: 60%;
-    top: 60%;
-    transition: transform .5s ease;
+    transition: all .3s ease;
 }
 
 .laptop:hover {
@@ -233,9 +244,11 @@ body:has(.laptop:hover) .phone2 {
 }
 
 .article {
+    transform: translateY(100vh);
     margin: 8% auto;
     text-align: center;
     padding: 2rem;
+    transition: all .3s ease;
 }
 
 .discription {
@@ -277,6 +290,12 @@ section p {
     font-size: 1.12rem;
     padding: 0.5rem;
     color: var(--text-color);
+    transition: color 0.5s ease;
+}
+
+.setup-guide{
+    transform: translateY(100vh);
+    transition: all .3s ease;
 }
 
 body:has(.setup-guide:hover) .setup-guide h2 {

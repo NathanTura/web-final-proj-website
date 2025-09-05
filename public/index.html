@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body data-theme="light">
+  <body data-theme="light" onscroll="handleScroll()">
     <header>
        <div class="menu-slider">
           <button>
@@ -43,8 +43,8 @@
       </div>
     </header>
     <main>
-      <div class="main">
-        <div class="slogan">
+      <div class="main" id="main">
+        <div class="slogan" id = 'slogan'>
           <p class="sl1">Start saving for a better future</p>
           <p class="sl2">Get your wallet nice and fat</p>
 
@@ -57,7 +57,7 @@
         </div>
       </div>
     </main>
-    <div class="article">
+    <div class="article" id="article">
       <div class="discription">
         <section class="Smsarticle">
           <svg
@@ -115,7 +115,7 @@
       </div>
     </div>
 
-    <div class="setup-guide">
+    <div class="setup-guide" id="setup-guide">
       <h2>Getting Started with Ledger Pro</h2>
 
       <div class="Create-container">
