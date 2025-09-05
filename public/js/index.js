@@ -15,11 +15,20 @@ document.addEventListener('DOMContentLoaded', () => {
             link_.style.whiteSpace = 'nowrap';
             link_.style.minWidth = 'fit-content';
         
+        
             link_.innerHTML = `
-                <img src="assets/profile_pic.png" alt="profile">
-                
+                <img id="profileImg" src="assets/profile_pic2.png" alt="profile">
                 <p>Welcome ${username}</p>
             `;
+
+            const profileImg = document.getElementById('profileImg');
+
+            profileImg.addEventListener('mouseenter', () => {
+                profileImg.src = 'assets/profile_pic.png';
+            });
+            profileImg.addEventListener('mouseleave', () => {
+                profileImg.src = 'assets/profile_pic2.png';
+            });
         }
     } else {
         link_.innerHTML = signuphtml;
