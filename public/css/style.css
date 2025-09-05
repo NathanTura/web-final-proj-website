@@ -148,6 +148,45 @@ body[data-theme="dark"] {
     margin-left: 3rem;
     font-weight: 600;
 }
+
+#profileDropdown {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+#profileDropdown.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#profileDropdown a {
+    text-decoration: none;
+   
+    padding: 10px 15px;
+    color: var(--text-color);
+    font-weight: 500;
+    transition: all 0.5s ease;
+}
+
+#profileDropdown a:hover { 
+    cursor: pointer;
+    transform: translateX(3px);    
+    border-left: var(--accent-color) solid 1px;
+}
+
+
 .main {
     display: flex;
     background-color: var(--accent-color);
