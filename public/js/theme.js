@@ -10,7 +10,7 @@ modeSlider.onclick = () => {
         sliderCircle.style.transform = 'translateX(26px)';
 
         divs.forEach(div => {
-        div.style.background_color = 'black'; // Hide all divs initially
+        div.style.background_color = 'black'; 
         });
        
     } else {

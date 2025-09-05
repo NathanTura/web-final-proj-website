@@ -128,6 +128,26 @@ body[data-theme="dark"] {
     color: var(--bg-color);
 }
 
+
+.menu img{
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    border: solid 1px green;
+  
+}
+
+.menu img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.menu p{
+    padding: auto;
+    margin: auto;
+    margin-left: 3rem;
+    font-weight: 600;
+}
 .main {
     display: flex;
     background-color: var(--accent-color);
@@ -381,6 +401,8 @@ body:has(.Manage-Container:hover) .finances-video {
 body:has(.Manage-Container:hover) .finances-image {
     opacity: 0;
 }
+
+
 
 @media(max-width:769px) {
     .main {
