@@ -62,6 +62,6 @@ function profile_display(e) {
 
     document.addEventListener('click', () => {
         dropdown.classList.remove('show');
-        setTimeout(() => dropdown.remove(), 300); // match transition
+        setTimeout(() => dropdown.remove(), 300); 
     }, { once: true });
 }
