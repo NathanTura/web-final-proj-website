@@ -14,31 +14,25 @@
     <form   id="userForm">
       <div class="main-container">
         <div class="header">
-          <h3>Sign up</h3>
-          <em>start your saving jurney</em>
+          <h3>Sign in</h3>
+          <em>Get in to your account</em>
         </div>
         <div class="input-group">
-          <label for="Email">Email Address</label>
-          <input type="email" name="Email" />
+          <label for="Email">Email address or username</label>
+          <input type="text" name="Email" id="username-input" />
         </div>
-        <div class="input-group">
-          <label for="Email">Username</label>
-          <input type="text" name="Uname"  />
-        </div>
+      
         <div class="input-group">
           <label for="password">password</label>
-          <input type="password" name="password" />
+          <input type="password" name="password" id="password-input" />
         </div>
-        <div class="input-group">
-          <label for="confirm password">Confirm password</label>
-          <input type="password" name="confirmpassword"  />
-        </div>
+       
         <div
           id="message"
           style="color: red; text-align: center; margin: 10px 10px"
         ></div>
         <div class="button-group">
-          <input type="submit" value="Sign up" name="submit" />
+          <input type="submit" value="Sign in" name="submit" />
         </div>
         <div class="separeter-group">
           <hr />
@@ -47,15 +41,15 @@
         </div>
         <div class="link-group">
           <button class="google">
-            <img src="" alt="" />Sign up with Google
+            <img src="" alt="" />Sign in with Google
           </button>
           <button class="facebook">
-            <img src="" alt="" />Sign up with Facebook
+            <img src="" alt="" />Sign in with Facebook
           </button>
-          <button class="apple"><img src="" alt="" />Sign up with Apple</button>
+          <button class="apple"><img src="" alt="" />Sign in with Apple</button>
         </div>
         <div class="already">
-          <p>Already have an account? <em><a href="signin.html">Sign in here</a></em> </p>
+          <p>Don't have an account? <em><a href="signup.html">Sign up here</a></em> </p>
         </div>
       </div>
     </form>
@@ -63,4 +57,4 @@
 </html>
 
 <script src="js/popup.js"></script>
-<script src="./js/signup.js"></script>
+<script src="./js/signin.js"></script>

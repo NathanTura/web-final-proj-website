@@ -1,4 +1,6 @@
+
 document.getElementById('userForm').addEventListener('submit', function (e) {
+    
     e.preventDefault();  // Prevent default form submit
     //Normally, when a form is submitted, the browser reloads the page and sends the form data to the server
     const formData = new FormData(this);
@@ -24,18 +26,19 @@ document.getElementById('userForm').addEventListener('submit', function (e) {
         })
             .then(response => response.json())
             .then(data => {
-                const messageEl = document.getElementById('message');
+                
 
                 if (data.status === 'success') {
-          
-                    messageEl.style.color = 'green';
-                    messageEl.innerText = `${data.message}`;
-
+                    
+                    createpopup(data.status , data.message)
+                    localStorage.clear()
+                    
                     localStorage.setItem('userId', data.id);
                     localStorage.setItem('username' , data.username);
 
                     setTimeout(() => {
-                        messageEl.innerText = 'Redirecting...';
+                          createpopup(data.status , 'Redirecting...')
+
                     }, 2000);
 
                     setTimeout(() => {
@@ -44,14 +47,11 @@ document.getElementById('userForm').addEventListener('submit', function (e) {
 
                 } else {
         
-                    messageEl.style.color = 'red';
-                    messageEl.innerText = data.message;
+                    createpopup(data.status , data.message)
                 }
             })
             .catch(err => {
-                const messageEl = document.getElementById('message');
-                messageEl.style.color = 'red';
-                messageEl.innerText = 'Error with database';
+                createpopup(data.status , data.message)
                 console.error(err);
             });
     });

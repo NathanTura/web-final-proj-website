@@ -175,3 +175,44 @@ body:has(.apple:hover) .facebook{
 body:has(.apple:hover) .google{
     transform: translateY(-10%)  scale(.8);
 }
+
+.already{
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+.already p{
+    font-size: 1.1rem;
+    opacity: .9;
+}
+
+.already a{
+    text-decoration: none;
+    color: #00a383;
+    transition: all .5s ease;
+}
+
+.already a:hover{
+    color: #0f746b;
+    text-decoration:underline ;
+}
+
+.already a:active{
+    color: #1ab697;
+}
+
+.popup {
+    position: fixed;
+    top: 10%;
+    right: -300px; 
+    min-width: fit-content;
+    padding: 10px;
+    z-index: 1000;
+    background-color: #ffffff;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-left: solid 3px;
+    transition: right 0.5s ease-in-out;
+}
