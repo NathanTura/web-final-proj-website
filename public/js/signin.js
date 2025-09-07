@@ -15,9 +15,18 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(res => res.json())
         .then(data => {
             if (data.status === "success") {
+
+               
+                 setTimeout(() => {
+                     document.getElementById('main-container').style.boxShadow = '0px 0px 5px #085f4e'
+                }, 50);
+
+                setTimeout(() => {
+                    document.getElementById('main-container').style.boxShadow = '0px 0px 5px black'
+                }, 3000);
                 createpopup("success", data.message);
 
-              
+                
                 localStorage.setItem('userId', data.id);
                 localStorage.setItem('username' , data.username);
 
@@ -25,10 +34,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => window.location.href = 'http://localhost:8000/public/index.html', 3000);
 
             } else {
+                setTimeout(() => {
+                    document.getElementById('main-container').style.boxShadow = '0px 0px 5px #5f0808ff'
+                }, 50);
+
+                setTimeout(() => {
+                    document.getElementById('main-container').style.boxShadow = '0px 0px 5px black'
+                }, 3000);
+              
                 createpopup("error", data.message);
             }
         })
         .catch(err => {
+                setTimeout(() => {
+                    document.getElementById('main-container').style.boxShadow = '0px 0px 5px #5f0808ff'
+                }, 50);
+
+                setTimeout(() => {
+                    document.getElementById('main-container').style.boxShadow = '0px 0px 5px black'
+                }, 3000);
             console.error("Fetch Error:", err);
             createpopup("error", "Server error or invalid JSON response");
         });
