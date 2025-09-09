@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    localStorage.clear()
 
     const pathParts = window.location.pathname.split("/").filter(p => p);
     const hostname = pathParts.pop();
@@ -80,12 +78,12 @@ function apicall(action, formdata) {
                     document.getElementById('main-container').style.boxShadow = '0px 0px 5px black';
                 }, 3000);
 
-                createpopup("success", data.message);
+                createpopup(data.status, data.message);
 
                 localStorage.setItem('userId', data.id);
                 localStorage.setItem('username', data.username);
 
-                setTimeout(() => createpopup("success", "Redirecting..."), 2000);
+                setTimeout(() => createpopup(data.status, "Redirecting..."), 2000);
                 setTimeout(() => window.location.href = 'http://localhost:8000/public/index.html', 3000);
             } else {
                 setTimeout(() => {
@@ -107,9 +105,9 @@ function apicall(action, formdata) {
                     document.getElementById('main-container').style.boxShadow = '0px 0px 5px black';
                 }, 3000);
 
-                createpopup("success", data.message);
+                createpopup(data.status, data.message);
 
-                setTimeout(() => createpopup("success", "Redirecting to Sign in..."), 2000);
+                setTimeout(() => createpopup(data.status, "Redirecting to Sign in..."), 2000);
                 setTimeout(() => window.location.href = 'signin.html', 3000);
             } else {
                 setTimeout(() => {
