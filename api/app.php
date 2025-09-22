@@ -8,14 +8,20 @@ $action = $_POST['action'] ?? '';
 
 if ($action == 'signin'){
 
-    if (empty($login) || empty($password)) {
+    if (empty($login)) {
         echo json_encode([
             "status" => "failed",
-            "message" => "Email/Username and password are required"
+            "message" => "Email or Username is required"
         ]);
         exit;
     }
-
+    if (empty($password)){
+        echo json_encode([
+            "status" => "failed",
+            "message" => "Password is required"
+        ]);
+        exit;
+    }
     $stmt = $conn->prepare("select * from users where EmailAddress = ? or Username = ?");
 
     if (!$stmt) {

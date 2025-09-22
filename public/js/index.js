@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  
     const link_ = document.getElementById('signup');
     const signuphtml = link_.innerHTML;
 
